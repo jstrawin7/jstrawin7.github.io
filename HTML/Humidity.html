@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    
+    <title>Web Visualization Dashboard (Latitude)</title>
+
+</head>
+
+<body>
+
+<body style="background-color: lightgray">
+
+    <nav class="navbar navbar-default">      
+        <div class="container">
+            <div class="navbar-header">
+                    <a class="navbar-brand logo" href="index.html"> 
+                    <span class="nav-color navbaractive">Latitude</span></a>
+            </div>
+                
+                                        
+            <div class="nav navbar-nav navbar-right">        
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">Plots<span class="caret"> </span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Maxtemperature.html">Max Temperature</a></li>
+                        <li><a href="Humidity.html">Humidity</a></li>
+                        <li><a href="Cloudiness.html">Cloudiness</a></li>
+                        <li><a href="Windspeed.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                 
+                <li><a href="Comparison.html"> Comparison</a></li>
+                <li><a href="data.html"> Data</a></li>                                  
+            </div>
+        
+        </div>      
+    </nav>    
+     
+        <div class= "container">
+            <div class= "row">
+                <div class= "col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                
+                        <h1>Humidity</h1>
+                        <hr>
+                        <div id="summarytext" align="left">
+                            <p><img style="padding: 0 15px; float: left;" img class="Summary image" src="images\Fig2.png" width="240" height="300" onmouseover="this.width=520" onmouseout="this.width=240" alt="Latitude v Temp"> 
+                                As expected, our Latitude data is great to visualize temperature with temperatures rising within tropics and as we move closer to the equater. However our Latitude data shows little to no relationship with humidity, cloudiness, or wind speed in a city.
+                                <br><br> 
+                                Clouds and humidity appear mostly consistent across different cities. Cloudiness and humitidy is not dependant on latitude.As expected, our Latitude data is great to visualize temperature with temperatures rising within tropics and as we move closer to the equater.                                
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class= "col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+
+                        <h2>Visualizations</h2>
+                        <hr>
+                    
+                    <div class1= "sidebar">
+                        <a href= "Maxtemperature.html"><img id= "viz-fig1" src="images\Fig1.png"  width="240" height="240" onmouseover="this.width=520" onmouseout="this.width=240"alt="Latitude v Temp"></a>
+                        <a href= "Humidity.html"><img id= "viz-fig2" src= "images\Fig2.png", class="border" width="240" height="240" onmouseover="this.width=520" onmouseout="this.width=240"alt= "Humidity vs. Latitude Scatterplt"></a>
+                        <a href= "Cloudiness.html"><img id= "viz-fig3" src= "images\Fig3.png", width="240" height="240" onmouseover="this.width=520" onmouseout="this.width=240"alt= "Cloudiness vs. Latitude Scatterplt"></a>
+                        <a href= "Windspeed.html"><img id= "viz-fig4" src= "images\Fig4.png", width="240" height="240" onmouseover="this.width=520" onmouseout="this.width="alt= "Wind Speed vs. Latitude Scatterplt"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+</html>
